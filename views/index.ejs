@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Site</title>
+    <link rel="stylesheet" href="style.css"> <!-- we linked it so ./style.css will do same -->
+</head>
+<body>
+    <main>
+ <form  method="post" action="/contact"><!--it was by default get(it by default run on body main server to change it set to post) we can change it to post  action  used for form submit hote hi kis url pe isko redirect krne me.  and post default ko change krne ke liye bs jo name hoga vhe key hoga object ka -->
+    <h1>Contact Now</h1>
+<input type="text" name = "name" placeholder="Name"/>
+<input type="email" name = "email" placeholder="Email"/>
+
+    <button type="submit">Send Message</button>
+
+</form>
+
+    </main>
+    <!-- <h1>Home</h1> -->
+     <!-- <p>Hello <%=locals.name%></p> writing js variable   --> <!-- its just an approach to write locals. before name  instead of only name -->
+     <!-- locals for not returning anything  locals is whole object  in name wala -->
+     <script src="script.js"></script>
+</body>
+</html>

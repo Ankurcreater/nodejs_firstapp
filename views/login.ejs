@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- we linked it so ./style.css will do same -->
+
+    <title>Login Here</title>
+</head>
+<body>
+    <div>
+
+        <form action="/login" method="post">
+            
+            <h1>Login Now</h1>
+
+            <input type="email" name = "email" placeholder="Email" value="<%= locals.email %>"/>
+            
+            <input type="password" name = "password" placeholder="Password"/>
+        
+
+            <p class="error"> <%= locals.message %> </p>
+            <!-- starting me exist nhi krta hai so we used if it exists then show else nhi -->
+            
+                <button type="submit">Log in</button>
+        </form>
+    </div>
+</body>
+</html>
